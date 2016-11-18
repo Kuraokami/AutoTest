@@ -22,7 +22,7 @@ public class CreateTest {
 
 	@AfterSuite
 	public void tearDown() {
-		WebDriverManager.getInstance().getDriver().close();
+		WebDriverManager.getInstance().getDriver().quit();
 
 	}
 }
