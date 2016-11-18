@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="loginTest">
+		<parameter name="login-name" value="gap-automation-test@mailinator.com" />
+		<parameter name="password" value="12345678" />
+		<classes>
+			<class name="gap.com.snake.gap.LoginTest" />
+		</classes>
+	</test>
+
+	
+	<test name="VerifyTest">
+		<parameter name="employee_identification" value="1234567890" />
+		<classes>
+			<class name="gap.com.snake.gap.VerifyTest" />
+		</classes>
+	</test>
+
+	<test name="DeleteTest">
+		<parameter name="login-name" value="gap-automation-test@mailinator.com" />
+		<parameter name="password" value="12345678" />
+		<parameter name="employee_identification" value="1234567890" />
+		<classes>
+			<class name="gap.com.snake.gap.DeleteTest" />
+		</classes>
+	</test>
+
+</suite>
