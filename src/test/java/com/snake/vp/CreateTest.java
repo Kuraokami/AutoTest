@@ -10,13 +10,9 @@ public class CreateTest {
 
 	@Test
 	public void createPC() {
-		// Open the login page
 		WebDriverManager.getInstance().navigate();
-
 		ListPCsPage list = new ListPCsPage();
-		
 		list.filterPC("Fred");
-		
 		Assert.assertTrue(list.countPC() >= 1);		
 	}
 

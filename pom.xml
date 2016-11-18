@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>gap</groupId>
-	<artifactId>com.snake.gap</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>com.snake.VP</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>com.snake.gap</name>
+	<name>VP Auto Tests</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -27,7 +27,26 @@
 		</plugins>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
