@@ -25,7 +25,7 @@ public class WebDriverManager {
 
 	protected WebDriverManager() {
 		try {
-			DesiredCapabilities caps = DesiredCapabilities.chrome();
+			DesiredCapabilities caps = DesiredCapabilities.firefox();
 			caps.setCapability("platform", "Windows XP");
 			caps.setCapability("version", "43.0");
 
